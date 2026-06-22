@@ -9,7 +9,7 @@ class Product:
         print(f"Pret: {self.price} lei")
         print(f"Cantitate: {self.quantity}")
         
-    def update_quatity(self, amount):
+    def update_quantity(self, amount):
         if amount < 0:
             if self.quantity >= -amount:
                 self.quantity += amount
