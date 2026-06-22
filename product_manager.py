@@ -20,3 +20,11 @@ class ProductManager:
             total += product.price * product.quantity
 
         print("Valoare totala:", total)
+
+    def remove_product(self, name):
+        for product in self.products:
+            if product.name.lower() == name.lower():
+                self.products.remove(product)
+                print(f"Produsul '{product.name}' a fost șters.")
+                return
+        print(f"Produsul '{name}' nu a fost găsit.")
