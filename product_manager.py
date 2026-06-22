@@ -10,6 +10,10 @@ class ProductManager:
     def show_products(self):
         for product in self.products:
             product.display_info()
+
+            if product.quantity == 0:
+                print("Stoc insuficient!")
+
     def total_value(self):
         total = 0
         for product in self.products:

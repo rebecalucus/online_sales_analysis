@@ -11,7 +11,9 @@ class Product:
         
     def update_quantity(self, amount):
         if amount < 0:
-            if self.quantity >= -amount:
+            if self.quantity == 0:
+                print("Stoc insuficient!")
+            elif self.quantity >= -amount:
                 self.quantity += amount
                 print(f"Stoc actualizat: {self.quantity}")
             else:
