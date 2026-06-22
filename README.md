@@ -3,7 +3,7 @@
 ## Descriere
 Proiect Python pentru gestionarea produselor si a coșului de cumparaturi folosind OOP și Git.
 
-## Functionalitati
+## Functionalitati/ Clase
 
 ### Product
 - nume, pret, cantitate
